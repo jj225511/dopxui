@@ -1,6 +1,5 @@
 #!/bin/sh
 apt update && apt install -y supervisor wget unzip iproute2
-# wget -qO- https://api.github.com/repos/XTLS/Xray-core/releases/latest | grep -o '"https://github.com/XTLS/Xray-core/releases/download/.*/Xray-linux-64.zip"' | xargs wget -O m.zip
 wget -O m.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
 unzip m.zip && rm -f m.zip
 chmod a+x xray
